@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet"  href="reset.css">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="imagenes/logo.svg">
+            <nav>         
+            </nav>
+        </div>
+    </header>
+    <h1 class="tituloPrincipal"></h1>
+    <main>
+        <section> <!-- SECTION INGRESE EL TEXTO AQUI -->
+            <input type="button" onclick="cuadroDeIngreso();" class="campo-texto" value="Ingrese el texto aquí">
+        </section>
+        <section class="contenedor"> <!-- SECTION RECTANGULO -->
+            <div class="cont1">
+                       <img class="rectangulo" src="imagenes/rectangle-1.svg" >
+                        <img class="monito" id="imagenDelMonito" src="imagenes/monito.svg">
+            </div>
+            <div class="cont2">
+                <button class="sin-mensaje"><p class="mensaje">Ningún mensaje fue encontrado</p></button>
+                <button class="ingresa"><p class="cuadroIngresaElTexto">Ingresa el texto que deseas encriptar o desencriptar</p></button>
+            </div>
+    </section>       
+    <section>  <!-- SECTION RESTRICTIONS -->
+            <img class="restricciones" src="imagenes/frame1.svg">
+    </section>
+        <section class="botonesDeAccion"> <!-- SECTION BOTONES DE ACCION -->
+            <button onclick="botonEncriptar();" class="boton1">
+                <img class="btnEncriptar" src="imagenes/encriptar.svg">
+            </button>
+            <button onclick="botonDesencriptar();" class="boton2">
+                <img class="btnDesencriptar" src="imagenes/encriptar2.svg">
+            </button>
+    </main>
+    <footer> 
+        <p class="copyright">Este proyecto fué elaborado por Leonardo Morales 2024 </p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
+

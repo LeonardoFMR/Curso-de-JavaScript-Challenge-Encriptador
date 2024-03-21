@@ -1,0 +1,191 @@
+body { 
+   background:  #F3F5FC; /*Color de fondo*/
+   font-family: 'Inter', sans-serif; /*Familia de fuentes usada*/
+   margin: 0; /*Espacio creado alrededor de un elemento fuera del borde del elemento empujando a los elementos vecinos hacia afuera */
+   padding: 0;  /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+}
+
+.logo { 
+   margin: 4em 0px 0px 2em; /*Espacio creado alrededor de un elemento fuera del borde del elemento empujando a los elementos vecinos hacia afuera */
+}
+
+.campo-texto,.campo-texto::placeholder, .NuevoInput,.NuevoInput::placeholder{
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   width: 100%;  /*Anchura del elemento*/
+   max-width: 577px; /*Limita el ancho máximo, así el width se adapta pero se mantiene*/
+   height: 48px; /*Altura*/
+   left: 240px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 168px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   font-family: Inter; /*Familia de fuentes usada*/
+   font-style: normal;
+   font-weight: 400; /*Grosor de la fuente, que tan negrita se pone en otras palabras*/
+   font-size: 2.3em; /*Tamaño de la fuente. (En lugar de 32px como en el Figma, usé una unidad relativa para mejor adaptabilidad entre diferentes dispositivos*/
+   line-height: 150%; /* Altura de texto, es el espacio entre líneas*/
+   color: #0A3871; /*Color de la fuente*/
+   background: #F3F5FC; /*Color de fondo*/
+   border: 0; /*Esto elimina cualquier borde que pueda estar presente en el elemento.*/
+}
+.rectangulo {
+   /*background-image: url("imagenes/rectangle-1.svg"); */
+   background-size: contain; /* Ajusta el tamaño de la imagen para que quepa dentro del contenedor */
+   background-position: center; /* Centra la imagen dentro del contenedor */
+   background-repeat: no-repeat; /* Evita que la imagen se repita */
+   width: 400px;  /*Anchura del elemento*/
+   height: 944px; /*Altura*/
+   border-radius: 32px; /*Radio de las esquinas de un elemento con borde*/
+   box-shadow: 0px 24px 32px -8px #00000014;
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   left: 1000px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 40px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   padding: 0; /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+}
+
+
+.monito {
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   top: 283px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   left: 1032px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   width: auto; /*  /*Anchura del elemento ajustada en automático con la del contenedor*/
+   height: auto; /* Ajusta la altura automáticamente */
+   object-fit: contain;
+   z-index: 1; /*Ordena como se apilan los elemntos para que se muestren uno delante de otro*/
+}
+
+
+.sin-mensaje {
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   width: 336px;  /*Anchura del elemento*/
+   height: 58px; /*Altura*/
+   z-index: 1; /*Ordena como se apilan los elemntos para que se muestren uno delante de otro*/
+   left: 1032px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 619px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   border: 0; /*Esto elimina cualquier borde que pueda estar presente en el elemento.*/
+   background-color: white; /*Color de fondo*/
+}
+
+.mensaje { 
+   font-family: Inter; /*Familia de fuentes usada*/
+   font-size: 24px;  /*Tamaño de fuente*/
+   font-weight: 700; /*Grosor de la fuente, que tan negrita se pone en otras palabras*/
+   line-height: 29px; /* Altura de texto, es el espacio entre líneas*/
+   letter-spacing: 0em; /*Espacio entre letras*/
+   text-align: center; /* Centrar el contenido horizontalmente */
+   color: #343A40; /*Color de la fuente*/
+}
+
+.ingresa {
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   width: 336px;  /*Anchura del elemento*/
+   height: 48px; /*Altura*/
+   z-index: 1; /*Ordena como se apilan los elemntos para que se muestren uno delante de otro*/
+   left: 1032px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 719px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   border: 0; /*Esto elimina cualquier borde que pueda estar presente en el elemento.*/
+   background-color: white; /*Color de fondo*/
+}
+
+.cuadroIngresaElTexto {
+   font-family: Inter; /*Familia de fuentes usada*/
+   font-size: 16px;  /*Tamaño de fuente*/
+   font-weight: 400;  /*Grosor de la fuente, que tan negrita se pone en otras palabras*/
+   line-height: 24px; /* Altura de texto, es el espacio entre líneas*/
+   letter-spacing: 0em; /*Espacio entre letras*/
+   text-align: center; /* Centrar el contenido horizontalmente */
+   color: #495057; /*Color de la fuente*/
+}
+
+.restricciones {
+   display: flex; /*Se establece como un contenedor flexible, los elementos secundarios se establecen como flex items y se adaptan al tamaño del contenedor y a sus epecificaciones,*/
+   flex-direction: row;  /*Los flex items establecidos con display: flex;  se posicionan de manera horizontal como la escritura de la mayoría de lenguaje*/ 
+   align-items: center; /*Centra los elementos*/
+   padding: 0px; /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+   gap: 8px;  /*Los flex items establecidos con display: flex; tendrán espacio entre sí de 8px*/ 
+   position: absolute;  /*La posición del elemento pasa a ser estática y en relación a las coordenadas de: top, right, bottom y left. */
+   width: 229px; /*Anchura del elemento*/
+   height: 18px; /*Altura*/
+   left: 240px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 851px; /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+}
+
+.botonesDeAccion {
+   display: flex; /*Se establece como un contenedor flexible, los elementos secundarios se establecen como flex items y se adaptan al tamaño del contenedor y a sus epecificaciones,*/
+   flex-direction: row; /*Los flex items establecidos con display: flex;  se posicionan de manera horizontal como la escritura de la mayoría de lenguaje*/ 
+   justify-content: center; /* Centra horizontalmente los botones */
+   padding: 0px; /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+   gap: 1em; /*Los flex items establecidos con display: flex; tendrán espacio entre sí, en lugar de 24px, usé una unidad relativa*/
+   position: absolute; /*La relación del elemento pasa a ser absoluta y en relación a las coordenadas de: top, right, bottom y left. */
+   width: 100%;  /*Anchura del elemento*/
+   max-width: 680px; /*Limita el ancho máximo, así el width se adapta pero se mantiene*/
+   height: 67px; /*Altura*/
+   left: 240px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   top: 885px;   /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   margin: 2em auto; /*Espacio creado alrededor de un elemento fuera del borde del elemento empujando a los elementos vecinos hacia afuera */
+    /*background-color: green; Color de fondo*/
+   
+
+}
+
+.copyright {
+   position: fixed; /*Fija la posición con respecto a la ventana del navegador, su posición permanece aún si se desplaza la página*/
+   bottom: 0; /* Se usa junto con "position: fixed;" fija el elmento al fondo de la página o el borde inferior*/
+   width: 100%;  /*Anchura del elemento*/
+   padding: 20px;  /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+   text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+
+.btnEncriptar {
+   width: 100%; /*Anchura del elemento*/
+   height: 100%; /*Altura*/
+}
+
+.btnDesencriptar {
+   width: 100%;  /*Anchura del elemento*/
+   height: 100%; /*Altura*/
+   /*background: red; Color de fondo*/
+   padding: 0; /*Espacio creado adicional dentro del elemento, aparece entre el borde del elemento y su contenido */
+}
+
+.boton1, .boton2{
+   border: none; /* Elimina el borde */
+   outline: none; /* Elimina el borde enfocado al hacer clic */
+   
+}
+
+
+
+
+.mensaje-error{
+   color: red;  /* Color rojo del mensaje de error  */
+   position: absolute; /*La relación del elemento pasa a ser absoluta y en relación a las coordenadas de: top, right, bottom y left. */
+   top: 851px;   /*Ajusta la posición vertical del elemento con respecto al borde superior del contenedor primario en el que se encuentra*/
+   z-index: 1; /*Ordena como se apilan los elemntos para que se muestren uno delante de otro*/
+   background: #F3F5FC; /*Color de fondo*/
+   left: 240px; /*Ajusta la posición horizontal del elemento con respecto al borde de la izquierda del contenedor primario en el que se encuentra*/
+   font-size: 22px; /*Tamaño de fuente*/
+   gap: 8px; /*Los flex items establecidos con display: flex; tendrán espacio entre sí de 8px*/ 
+   white-space: nowrap; /*Sin saltos de línea*/
+}
+
+
+
+/*Links
+   display: flex; 
+   flex-direction: row; 
+   align-items: flex-start;
+   https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+
+   padding: 0px;
+   margin: 2em auto;
+   https://developer.mozilla.org/es/docs/Web/CSS/padding
+
+   position: absolute;
+   https://developer.mozilla.org/es/docs/Web/CSS/position
+
+   width;
+   https://developer.mozilla.org/es/docs/Web/CSS/width
+
+   position: fixed; bottom: 0;   
+   https://developer.mozilla.org/es/docs/Web/CSS/bottom
+*/
