@@ -26,7 +26,6 @@ body {
    border: 0; /*Esto elimina cualquier borde que pueda estar presente en el elemento.*/
 }
 .rectangulo {
-   /*background-image: url("imagenes/rectangle-1.svg"); */
    background-size: contain; /* Ajusta el tamaño de la imagen para que quepa dentro del contenedor */
    background-position: center; /* Centra la imagen dentro del contenedor */
    background-repeat: no-repeat; /* Evita que la imagen se repita */
